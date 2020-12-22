@@ -1,0 +1,6 @@
+module TBMtimeCommon {
+  umbrella header "TBMtimeCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}

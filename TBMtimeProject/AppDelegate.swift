@@ -53,19 +53,16 @@ extension AppDelegate {
         self.window?.backgroundColor = .white
         
         /// 1、 首页
-//        let navOne = UINavigationController(rootViewController: MNFActorDetailVC())
-//        navOne.tabBarItem.title = "首页"
-//
-//        /// 2、影人
-//        let navTwo = UINavigationController(rootViewController: MNFMovieDetailVC())
-//        navTwo.tabBarItem.title = "影人"
-        
-        let vc = ViewController()
-        
+        let navOne = UINavigationController(rootViewController: MNFActorDetailVC())
+        navOne.tabBarItem.title = "首页"
+
+        /// 2、影人
+        let navTwo = UINavigationController(rootViewController: MNFMovieDetailVC())
+        navTwo.tabBarItem.title = "影片详情页"
+                
 
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [vc]
-        
+        tabbar.viewControllers = [navOne,navTwo]
         
         self.window?.rootViewController = tabbar
         self.window?.makeKeyAndVisible()

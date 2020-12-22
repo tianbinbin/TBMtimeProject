@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 085450D62591C30C00E22902 /* TBMtimeProject.xcdatamodeld */; };
 		085450DA2591C30F00E22902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085450D92591C30F00E22902 /* Assets.xcassets */; };
 		085450DD2591C30F00E22902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085450DB2591C30F00E22902 /* LaunchScreen.storyboard */; };
+		085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451EF2591DA9B00E22902 /* CommonHeader.swift */; };
+		085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F32591DA9B00E22902 /* MNFDemoPushVC.swift */; };
+		085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */; };
+		085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F92591DA9B00E22902 /* MNVActorViewModel.swift */; };
+		085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */; };
 		78DF759177009D0956E5E77A /* libPods-TBMtimeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD03F4B4C331C9709F683B /* libPods-TBMtimeProject.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,11 @@
 		085450DE2591C30F00E22902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		085450E32591C31000E22902 /* TBMtimeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBMtimeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		085450EE2591C31000E22902 /* TBMtimeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBMtimeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		085451EF2591DA9B00E22902 /* CommonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHeader.swift; sourceTree = "<group>"; };
+		085451F32591DA9B00E22902 /* MNFDemoPushVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFDemoPushVC.swift; sourceTree = "<group>"; };
+		085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFMovieDetailVC.swift; sourceTree = "<group>"; };
+		085451F92591DA9B00E22902 /* MNVActorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNVActorViewModel.swift; sourceTree = "<group>"; };
+		085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFActorDetailVC.swift; sourceTree = "<group>"; };
 		2D79AD5F30819EBBFF4743D6 /* Pods-TBMtimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.release.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.release.xcconfig"; sourceTree = "<group>"; };
 		7312E1ABF8A436EEACCB379F /* Pods-TBMtimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.debug.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A6BD03F4B4C331C9709F683B /* libPods-TBMtimeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBMtimeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +108,8 @@
 		085450CC2591C30C00E22902 /* TBMtimeProject */ = {
 			isa = PBXGroup;
 			children = (
+				085451F02591DA9B00E22902 /* Business */,
+				085451ED2591DA9B00E22902 /* Common */,
 				085450CD2591C30C00E22902 /* AppDelegate.swift */,
 				085450D12591C30C00E22902 /* ViewController.swift */,
 				085450D32591C30C00E22902 /* Main.storyboard */,
@@ -107,6 +119,89 @@
 				085450D62591C30C00E22902 /* TBMtimeProject.xcdatamodeld */,
 			);
 			path = TBMtimeProject;
+			sourceTree = "<group>";
+		};
+		085451ED2591DA9B00E22902 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				085451EE2591DA9B00E22902 /* CommonHeader */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		085451EE2591DA9B00E22902 /* CommonHeader */ = {
+			isa = PBXGroup;
+			children = (
+				085451EF2591DA9B00E22902 /* CommonHeader.swift */,
+			);
+			path = CommonHeader;
+			sourceTree = "<group>";
+		};
+		085451F02591DA9B00E22902 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				085451F12591DA9B00E22902 /* Demo */,
+				085451F42591DA9B00E22902 /* Movie */,
+				085451F72591DA9B00E22902 /* Actor */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		085451F12591DA9B00E22902 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				085451F22591DA9B00E22902 /* DemoVCs */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		085451F22591DA9B00E22902 /* DemoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				085451F32591DA9B00E22902 /* MNFDemoPushVC.swift */,
+			);
+			path = DemoVCs;
+			sourceTree = "<group>";
+		};
+		085451F42591DA9B00E22902 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				085451F52591DA9B00E22902 /* MovieVCs */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		085451F52591DA9B00E22902 /* MovieVCs */ = {
+			isa = PBXGroup;
+			children = (
+				085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */,
+			);
+			path = MovieVCs;
+			sourceTree = "<group>";
+		};
+		085451F72591DA9B00E22902 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				085451F82591DA9B00E22902 /* ActorViewModel */,
+				085451FA2591DA9B00E22902 /* ActorVCs */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		085451F82591DA9B00E22902 /* ActorViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				085451F92591DA9B00E22902 /* MNVActorViewModel.swift */,
+			);
+			path = ActorViewModel;
+			sourceTree = "<group>";
+		};
+		085451FA2591DA9B00E22902 /* ActorVCs */ = {
+			isa = PBXGroup;
+			children = (
+				085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */,
+			);
+			path = ActorVCs;
 			sourceTree = "<group>";
 		};
 		7E0C918A79A6E5D211138101 /* Pods */ = {
@@ -137,6 +232,7 @@
 				085450C62591C30C00E22902 /* Sources */,
 				085450C72591C30C00E22902 /* Frameworks */,
 				085450C82591C30C00E22902 /* Resources */,
+				7D90FF196116EA387660A714 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +349,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7D90FF196116EA387660A714 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		846C7F536FE907B98AFB416F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,9 +395,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
+				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,
+				085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */,
 				085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */,
 				085450D22591C30C00E22902 /* ViewController.swift in Sources */,
 				085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */,
+				085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */,
+				085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
