@@ -1,0 +1,6 @@
+module Pods_TBMtimeProject {
+  umbrella header "Pods-TBMtimeProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
