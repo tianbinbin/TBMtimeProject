@@ -59,10 +59,14 @@ extension AppDelegate {
         /// 2、影人
         let navTwo = UINavigationController(rootViewController: MNFMovieDetailVC())
         navTwo.tabBarItem.title = "影片详情页"
+         
+        /// 3、个人中心
+        let navThree = UINavigationController(rootViewController: MNFMineVC())
+        navThree.tabBarItem.title = "个人中心"
                 
 
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [navOne,navTwo]
+        tabbar.viewControllers = [navOne,navTwo,navThree]
         
         self.window?.rootViewController = tabbar
         self.window?.makeKeyAndVisible()

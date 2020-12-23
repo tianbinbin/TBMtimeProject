@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084AD0062592EAB300CB221E /* EggsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD0052592EAB300CB221E /* EggsView.swift */; };
+		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
+		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
+		084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3D525933E6000CB221E /* MNFMineVC.swift */; };
 		085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085450CD2591C30C00E22902 /* AppDelegate.swift */; };
 		085450D22591C30C00E22902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085450D12591C30C00E22902 /* ViewController.swift */; };
 		085450D52591C30C00E22902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085450D32591C30C00E22902 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084AD0052592EAB300CB221E /* EggsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsView.swift; sourceTree = "<group>"; };
+		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
+		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
+		084AD3D525933E6000CB221E /* MNFMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFMineVC.swift; sourceTree = "<group>"; };
 		085450CA2591C30C00E22902 /* TBMtimeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBMtimeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		085450CD2591C30C00E22902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		085450D12591C30C00E22902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +93,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084AD0032592EA4E00CB221E /* EggsPopupWindow */ = {
+			isa = PBXGroup;
+			children = (
+				084AD0042592EA9100CB221E /* EggsViews */,
+			);
+			path = EggsPopupWindow;
+			sourceTree = "<group>";
+		};
+		084AD0042592EA9100CB221E /* EggsViews */ = {
+			isa = PBXGroup;
+			children = (
+				084AD0052592EAB300CB221E /* EggsView.swift */,
+				084AD00D2592EAC000CB221E /* EggsView.xib */,
+			);
+			path = EggsViews;
+			sourceTree = "<group>";
+		};
+		084AD3C825933D3300CB221E /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				084AD3C925933D4100CB221E /* RxSwiftVCs */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		084AD3C925933D4100CB221E /* RxSwiftVCs */ = {
+			isa = PBXGroup;
+			children = (
+				084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */,
+			);
+			path = RxSwiftVCs;
+			sourceTree = "<group>";
+		};
+		084AD3D225933E4300CB221E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				084AD3D325933E4900CB221E /* MineVCs */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		084AD3D325933E4900CB221E /* MineVCs */ = {
+			isa = PBXGroup;
+			children = (
+				084AD3D525933E6000CB221E /* MNFMineVC.swift */,
+			);
+			path = MineVCs;
+			sourceTree = "<group>";
+		};
 		085450C12591C30C00E22902 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +197,9 @@
 		085451F02591DA9B00E22902 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				084AD3D225933E4300CB221E /* Mine */,
+				084AD3C825933D3300CB221E /* RxSwift */,
+				084AD0032592EA4E00CB221E /* EggsPopupWindow */,
 				085451F12591DA9B00E22902 /* Demo */,
 				085451F42591DA9B00E22902 /* Movie */,
 				085451F72591DA9B00E22902 /* Actor */,
@@ -328,6 +388,7 @@
 			files = (
 				085450DD2591C30F00E22902 /* LaunchScreen.storyboard in Resources */,
 				085450DA2591C30F00E22902 /* Assets.xcassets in Resources */,
+				084AD00E2592EAC000CB221E /* EggsView.xib in Resources */,
 				085450D52591C30C00E22902 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,11 +456,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */,
 				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
+				084AD0062592EAB300CB221E /* EggsView.swift in Sources */,
 				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,
 				085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */,
 				085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */,
 				085450D22591C30C00E22902 /* ViewController.swift in Sources */,
+				084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */,
 				085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */,
 				085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */,
 				085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */,

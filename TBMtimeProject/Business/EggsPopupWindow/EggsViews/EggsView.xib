@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EggsView" id="iN0-l3-epB" customClass="EggsView" customModule="TBMtimeProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_eggsShow" translatesAutoresizingMaskIntoConstraints="NO" id="xLj-dM-7Sk">
+                    <rect key="frame" x="47.5" y="243" width="319" height="395.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xLj-dM-7Sk" secondAttribute="height" multiplier="280:347" id="rCd-oR-fwC"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1A-yb-FNI">
+                    <rect key="frame" x="0.0" y="268" width="414" height="517.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9Q-bO-Jdc">
+                            <rect key="frame" x="45" y="120" width="324" height="210"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgF-93-mpF">
+                                    <rect key="frame" x="55" y="132" width="214" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="gJv-5B-aQh"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="icon_eggsClosebtn">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="关 闭">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="PingFangSC-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="psW-ds-uuh"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖品已发放，请到个人账户查看使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2y-sv-6SG">
+                                    <rect key="frame" x="80" y="179.5" width="164" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="oK6-0L-vCh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" red="0.52934485669999998" green="0.59611523150000001" blue="0.68618923430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y64-Lo-XwM">
+                                    <rect key="frame" x="40" y="76.5" width="244" height="39.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="您与大奖擦肩而过，多来社区逛逛， 没准下一个中奖的就是你呢～">
+                                            <attributes>
+                                                <color key="NSColor" red="0.30583423380000002" green="0.36865207550000001" blue="0.45092177389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="pgF-93-mpF" firstAttribute="top" secondItem="y64-Lo-XwM" secondAttribute="bottom" constant="16" id="3VO-74-3dB"/>
+                                <constraint firstAttribute="height" constant="210" id="4HB-xh-CSv"/>
+                                <constraint firstItem="L2y-sv-6SG" firstAttribute="centerX" secondItem="b9Q-bO-Jdc" secondAttribute="centerX" id="5i1-6O-w7f"/>
+                                <constraint firstItem="pgF-93-mpF" firstAttribute="leading" secondItem="b9Q-bO-Jdc" secondAttribute="leading" constant="55" id="HOh-tB-sqX"/>
+                                <constraint firstAttribute="bottom" secondItem="L2y-sv-6SG" secondAttribute="bottom" constant="14.5" id="NEK-s6-3IB"/>
+                                <constraint firstAttribute="trailing" secondItem="y64-Lo-XwM" secondAttribute="trailing" constant="40" id="NUk-q2-rQJ"/>
+                                <constraint firstAttribute="bottom" secondItem="pgF-93-mpF" secondAttribute="bottom" constant="32" id="Nfv-6v-tek"/>
+                                <constraint firstItem="y64-Lo-XwM" firstAttribute="centerX" secondItem="b9Q-bO-Jdc" secondAttribute="centerX" id="Oiu-wN-EHI"/>
+                                <constraint firstItem="pgF-93-mpF" firstAttribute="centerX" secondItem="b9Q-bO-Jdc" secondAttribute="centerX" id="Ovb-G2-KFA"/>
+                                <constraint firstAttribute="trailing" secondItem="pgF-93-mpF" secondAttribute="trailing" constant="55" id="YvK-Pq-VdU"/>
+                                <constraint firstItem="y64-Lo-XwM" firstAttribute="leading" secondItem="b9Q-bO-Jdc" secondAttribute="leading" constant="40" id="r7U-54-KbZ"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_eggsTitle" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-Q9-C7P">
+                            <rect key="frame" x="45" y="29" width="324" height="109"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UOD-Q9-C7P" secondAttribute="height" multiplier="558:188" id="aMk-HZ-fqi"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宇宙无敌幸运礼包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DZ-K8-mmc">
+                            <rect key="frame" x="121.5" y="81" width="171" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                    <constraints>
+                        <constraint firstItem="b9Q-bO-Jdc" firstAttribute="leading" secondItem="UOD-Q9-C7P" secondAttribute="leading" id="9jb-O1-ACP"/>
+                        <constraint firstAttribute="width" secondItem="F1A-yb-FNI" secondAttribute="height" multiplier="2:2.5" id="E1b-Zv-a6Q"/>
+                        <constraint firstItem="UOD-Q9-C7P" firstAttribute="top" secondItem="F1A-yb-FNI" secondAttribute="top" constant="29" id="QVa-G5-Y2J"/>
+                        <constraint firstItem="b9Q-bO-Jdc" firstAttribute="top" secondItem="UOD-Q9-C7P" secondAttribute="bottom" constant="-18" id="ZqV-3M-ISA"/>
+                        <constraint firstItem="UOD-Q9-C7P" firstAttribute="leading" secondItem="F1A-yb-FNI" secondAttribute="leading" constant="45" id="bX6-cf-mSv"/>
+                        <constraint firstItem="7DZ-K8-mmc" firstAttribute="centerY" secondItem="UOD-Q9-C7P" secondAttribute="centerY" constant="10" id="l2t-Cx-Grf"/>
+                        <constraint firstItem="b9Q-bO-Jdc" firstAttribute="trailing" secondItem="UOD-Q9-C7P" secondAttribute="trailing" id="t1W-PQ-sIi"/>
+                        <constraint firstAttribute="trailing" secondItem="UOD-Q9-C7P" secondAttribute="trailing" constant="45" id="uKh-lL-BKc"/>
+                        <constraint firstItem="7DZ-K8-mmc" firstAttribute="centerX" secondItem="UOD-Q9-C7P" secondAttribute="centerX" id="zVu-kL-9sd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWZ-KI-zIn">
+                    <rect key="frame" x="329" y="228" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SX3-Nh-0vF"/>
+                        <constraint firstAttribute="height" constant="40" id="Yoh-Id-gxK"/>
+                    </constraints>
+                    <state key="normal" image="icon_eggsClose"/>
+                    <connections>
+                        <action selector="closeBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gLv-NR-MFb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40325440950920244" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xLj-dM-7Sk" secondAttribute="trailing" constant="47.5" id="2GB-pE-ghj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oWZ-KI-zIn" secondAttribute="trailing" constant="45" id="LWH-K8-kCN"/>
+                <constraint firstItem="F1A-yb-FNI" firstAttribute="firstBaseline" secondItem="oWZ-KI-zIn" secondAttribute="baseline" id="S9R-t3-ckm"/>
+                <constraint firstItem="xLj-dM-7Sk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="47.5" id="Tgl-LM-hOb"/>
+                <constraint firstItem="xLj-dM-7Sk" firstAttribute="top" secondItem="oWZ-KI-zIn" secondAttribute="bottom" constant="-25" id="eVn-O5-V3v"/>
+                <constraint firstItem="F1A-yb-FNI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kNu-im-A0d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F1A-yb-FNI" secondAttribute="trailing" id="lMe-hb-ic1"/>
+                <constraint firstItem="oWZ-KI-zIn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-200" id="syc-Qu-Yws"/>
+            </constraints>
+            <connections>
+                <outlet property="awardWinningcopyWriterLabel" destination="y64-Lo-XwM" id="ksQ-A4-98y"/>
+                <outlet property="backView" destination="F1A-yb-FNI" id="Yvo-l7-0Vi"/>
+                <outlet property="closeButton" destination="oWZ-KI-zIn" id="WDd-jZ-Bfe"/>
+                <outlet property="eggsImageView" destination="xLj-dM-7Sk" id="Ryg-MI-tCT"/>
+                <outlet property="fixedCopyWriterLabel" destination="L2y-sv-6SG" id="2Dd-G3-y6t"/>
+                <outlet property="guanbiButton" destination="pgF-93-mpF" id="bs6-fU-39k"/>
+                <outlet property="whiteView" destination="b9Q-bO-Jdc" id="dmf-6j-PQf"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="107"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_eggsClose" width="40" height="40"/>
+        <image name="icon_eggsClosebtn" width="174" height="46"/>
+        <image name="icon_eggsShow" width="280" height="347"/>
+        <image name="icon_eggsTitle" width="279" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

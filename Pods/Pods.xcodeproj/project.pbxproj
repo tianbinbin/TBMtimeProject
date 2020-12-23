@@ -7,52 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D86BED6716EB21C5CA5C655A8610926 /* Pods-TBMtimeProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0AA6CF541C92BB37E2D88741B0DA8 /* Pods-TBMtimeProject-dummy.m */; };
-		CDDFFCE2E4AF85220D7A198B2D5F853F /* Pods-TBMtimeProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A97269B8E18BDFC38E645E412A8FD373 /* Pods-TBMtimeProject-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		964D54B09E373463EA36819DFF1D46BC /* Pods-TBMtimeProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0AA6CF541C92BB37E2D88741B0DA8 /* Pods-TBMtimeProject-dummy.m */; };
+		AF3DC626257516B9987E0381A7564919 /* Pods-TBMtimeProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A97269B8E18BDFC38E645E412A8FD373 /* Pods-TBMtimeProject-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		78D9E4F59ED3D2B53E9C73F3BAAFFB58 /* PBXContainerItemProxy */ = {
+		09F5181133035EEA2F9D2B6D6BD25931 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 63FECBE2D60F2EFADB592C466381E839 /* TBMtimeBaseControll.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C5FE2659DC6F35C333F664DBDE70AF7;
-			remoteInfo = TBMtimeBaseControll;
-		};
-		89F84CF6227D5A5B4FB95D94EA89B117 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5D4CBB306E746E61A3A6D0C541D2E3E /* TBMtimeCommon.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 02165D5167BD3059F760C42A0403072B;
-			remoteInfo = TBMtimeCommon;
-		};
-		C37F665DB4876CF2409862FC04E20B55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 116B88703942AEE5B7B7262B757319C6 /* Alamofire.xcodeproj */;
+			containerPortal = 519DBF5B30EB75469972413E204A69E4 /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 81B7E9B7CD0CADA087A4BB042FBA92E7;
 			remoteInfo = Alamofire;
 		};
+		170867F4BACE493A7BF01406EC8C34B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FAF9D3A53D96778AC096795454A4BD /* TBMtimeCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 02165D5167BD3059F760C42A0403072B;
+			remoteInfo = TBMtimeCommon;
+		};
+		7F2A179FDEEED32AFC020F8FED131D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 174273E19E8C002E429F85AD3CD956CE /* TBMtimeBaseControll.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C5FE2659DC6F35C333F664DBDE70AF7;
+			remoteInfo = TBMtimeBaseControll;
+		};
+		8A95A1D80D8A32BA17E7F677EFA62390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E1FA0F7CA066F9DB99C76A792339A3 /* R.swift.Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 61AC8FF22886EA444144B44F9AC733B8;
+			remoteInfo = R.swift.Library;
+		};
+		ECF1738061BB2F916ED87B8802FC71F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE0052892C3EDD3079653F30A0616AD2 /* R.swift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF6ED22E1CDAF83ADE98360601DC4DE5;
+			remoteInfo = R.swift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00E1FA0F7CA066F9DB99C76A792339A3 /* R.swift.Library */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = R.swift.Library; path = R.swift.Library.xcodeproj; sourceTree = "<group>"; };
 		0362D9D68A25EFC3BDC157341246D061 /* Pods-TBMtimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TBMtimeProject.release.xcconfig"; sourceTree = "<group>"; };
-		116B88703942AEE5B7B7262B757319C6 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
+		174273E19E8C002E429F85AD3CD956CE /* TBMtimeBaseControll */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBMtimeBaseControll; path = TBMtimeBaseControll.xcodeproj; sourceTree = "<group>"; };
 		3130DFD7EEDF98E40F073B29B9EA8B96 /* Pods-TBMtimeProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TBMtimeProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		519DBF5B30EB75469972413E204A69E4 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
+		52FAF9D3A53D96778AC096795454A4BD /* TBMtimeCommon */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBMtimeCommon; path = TBMtimeCommon.xcodeproj; sourceTree = "<group>"; };
 		5D5A10BC0C2587E51A77522675743237 /* Pods-TBMtimeProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TBMtimeProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		63FECBE2D60F2EFADB592C466381E839 /* TBMtimeBaseControll */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBMtimeBaseControll; path = TBMtimeBaseControll.xcodeproj; sourceTree = "<group>"; };
 		707A51C49ADA3F68A9E466A92960660E /* Pods-TBMtimeProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TBMtimeProject.modulemap"; sourceTree = "<group>"; };
 		8AE0AA6CF541C92BB37E2D88741B0DA8 /* Pods-TBMtimeProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TBMtimeProject-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A97269B8E18BDFC38E645E412A8FD373 /* Pods-TBMtimeProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TBMtimeProject-umbrella.h"; sourceTree = "<group>"; };
 		AA476DA73841F18A522534D8014F2E50 /* Pods-TBMtimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TBMtimeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA790B117BCF137BF1C78253D2F153EA /* libPods-TBMtimeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TBMtimeProject.a"; path = "libPods-TBMtimeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5D4CBB306E746E61A3A6D0C541D2E3E /* TBMtimeCommon */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TBMtimeCommon; path = TBMtimeCommon.xcodeproj; sourceTree = "<group>"; };
+		DE0052892C3EDD3079653F30A0616AD2 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = R.swift; path = R.swift.xcodeproj; sourceTree = "<group>"; };
 		F6B63B60FE780B947C72B90614DCBB62 /* Pods-TBMtimeProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TBMtimeProject-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D85D76267FD90A0CC2445066406CDE9A /* Frameworks */ = {
+		43BF2D3D7BD8183F3F6EB07C8BEDDBA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,22 +94,24 @@
 			path = "Target Support Files/Pods-TBMtimeProject";
 			sourceTree = "<group>";
 		};
-		365EE3ADDAE2BF4713F1E97142CB7C84 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				116B88703942AEE5B7B7262B757319C6 /* Alamofire */,
-				63FECBE2D60F2EFADB592C466381E839 /* TBMtimeBaseControll */,
-				E5D4CBB306E746E61A3A6D0C541D2E3E /* TBMtimeCommon */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		503AEF5687826048BF71CD001736A2A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				AA790B117BCF137BF1C78253D2F153EA /* libPods-TBMtimeProject.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE774E25BB069189B947FBF82CB1F2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				519DBF5B30EB75469972413E204A69E4 /* Alamofire */,
+				DE0052892C3EDD3079653F30A0616AD2 /* R.swift */,
+				00E1FA0F7CA066F9DB99C76A792339A3 /* R.swift.Library */,
+				174273E19E8C002E429F85AD3CD956CE /* TBMtimeBaseControll */,
+				52FAF9D3A53D96778AC096795454A4BD /* TBMtimeCommon */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AAC85C0E58433489B6A1ECAA7EF831EE /* Targets Support Files */ = {
@@ -109,7 +127,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				365EE3ADDAE2BF4713F1E97142CB7C84 /* Pods */,
+				7BE774E25BB069189B947FBF82CB1F2D /* Pods */,
 				503AEF5687826048BF71CD001736A2A8 /* Products */,
 				AAC85C0E58433489B6A1ECAA7EF831EE /* Targets Support Files */,
 			);
@@ -125,11 +143,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		81C4B8B3B42EB9C0DE2AAD014F4E93CD /* Headers */ = {
+		4A700D227F1F073E89089196686A7788 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDDFFCE2E4AF85220D7A198B2D5F853F /* Pods-TBMtimeProject-umbrella.h in Headers */,
+				AF3DC626257516B9987E0381A7564919 /* Pods-TBMtimeProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,18 +156,20 @@
 /* Begin PBXNativeTarget section */
 		6956E740321F0A7C75842EE1A51EA4B6 /* Pods-TBMtimeProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A75ACCDC801476F9E0B49343C8A1733 /* Build configuration list for PBXNativeTarget "Pods-TBMtimeProject" */;
+			buildConfigurationList = 6547772F8B0E8BB1AF376DFDF6930E11 /* Build configuration list for PBXNativeTarget "Pods-TBMtimeProject" */;
 			buildPhases = (
-				81C4B8B3B42EB9C0DE2AAD014F4E93CD /* Headers */,
-				D94AA7B0C611EB7C11E84FD0089B7338 /* Sources */,
-				D85D76267FD90A0CC2445066406CDE9A /* Frameworks */,
+				4A700D227F1F073E89089196686A7788 /* Headers */,
+				A8EDA25C546E867951B34A5D16B19A4A /* Sources */,
+				43BF2D3D7BD8183F3F6EB07C8BEDDBA0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				388836A11D4A7D04F29E4C077209CDC9 /* PBXTargetDependency */,
-				B37E4098578E5E6FBE1800AB8349134B /* PBXTargetDependency */,
-				99507F5419524B79594B6BA8771CAE27 /* PBXTargetDependency */,
+				E0A48DB306F2CB3CEB73F00D4BE91E46 /* PBXTargetDependency */,
+				940ACCE1A2E17952F45D29D603874441 /* PBXTargetDependency */,
+				FB687C96AD2EE6EE44CE498CEE8A37C0 /* PBXTargetDependency */,
+				8A9DA19081F32F1F8B95C921E6B06D28 /* PBXTargetDependency */,
+				22ABE37FFE26906197AFA4B935D54242 /* PBXTargetDependency */,
 			);
 			name = "Pods-TBMtimeProject";
 			productName = "Pods-TBMtimeProject";
@@ -178,13 +198,19 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProjectRef = 116B88703942AEE5B7B7262B757319C6 /* Alamofire */;
+					ProjectRef = 519DBF5B30EB75469972413E204A69E4 /* Alamofire */;
 				},
 				{
-					ProjectRef = 63FECBE2D60F2EFADB592C466381E839 /* TBMtimeBaseControll */;
+					ProjectRef = DE0052892C3EDD3079653F30A0616AD2 /* R.swift */;
 				},
 				{
-					ProjectRef = E5D4CBB306E746E61A3A6D0C541D2E3E /* TBMtimeCommon */;
+					ProjectRef = 00E1FA0F7CA066F9DB99C76A792339A3 /* R.swift.Library */;
+				},
+				{
+					ProjectRef = 174273E19E8C002E429F85AD3CD956CE /* TBMtimeBaseControll */;
+				},
+				{
+					ProjectRef = 52FAF9D3A53D96778AC096795454A4BD /* TBMtimeCommon */;
 				},
 			);
 			projectRoot = "";
@@ -195,38 +221,48 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D94AA7B0C611EB7C11E84FD0089B7338 /* Sources */ = {
+		A8EDA25C546E867951B34A5D16B19A4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D86BED6716EB21C5CA5C655A8610926 /* Pods-TBMtimeProject-dummy.m in Sources */,
+				964D54B09E373463EA36819DFF1D46BC /* Pods-TBMtimeProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		388836A11D4A7D04F29E4C077209CDC9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			targetProxy = C37F665DB4876CF2409862FC04E20B55 /* PBXContainerItemProxy */;
-		};
-		99507F5419524B79594B6BA8771CAE27 /* PBXTargetDependency */ = {
+		22ABE37FFE26906197AFA4B935D54242 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TBMtimeCommon;
-			targetProxy = 89F84CF6227D5A5B4FB95D94EA89B117 /* PBXContainerItemProxy */;
+			targetProxy = 170867F4BACE493A7BF01406EC8C34B7 /* PBXContainerItemProxy */;
 		};
-		B37E4098578E5E6FBE1800AB8349134B /* PBXTargetDependency */ = {
+		8A9DA19081F32F1F8B95C921E6B06D28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TBMtimeBaseControll;
-			targetProxy = 78D9E4F59ED3D2B53E9C73F3BAAFFB58 /* PBXContainerItemProxy */;
+			targetProxy = 7F2A179FDEEED32AFC020F8FED131D58 /* PBXContainerItemProxy */;
+		};
+		940ACCE1A2E17952F45D29D603874441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			targetProxy = ECF1738061BB2F916ED87B8802FC71F1 /* PBXContainerItemProxy */;
+		};
+		E0A48DB306F2CB3CEB73F00D4BE91E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 09F5181133035EEA2F9D2B6D6BD25931 /* PBXContainerItemProxy */;
+		};
+		FB687C96AD2EE6EE44CE498CEE8A37C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			targetProxy = 8A95A1D80D8A32BA17E7F677EFA62390 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16A235C7A2FDD47FC05D8856C68E6976 /* Debug */ = {
+		87E2376D7A8C87175EA6AD34B9B929E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA476DA73841F18A522534D8014F2E50 /* Pods-TBMtimeProject.debug.xcconfig */;
+			baseConfigurationReference = 0362D9D68A25EFC3BDC157341246D061 /* Pods-TBMtimeProject.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -243,8 +279,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -307,6 +344,28 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		93B0E462FB7580E7EA881AAF382C0C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA476DA73841F18A522534D8014F2E50 /* Pods-TBMtimeProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -374,46 +433,23 @@
 			};
 			name = Debug;
 		};
-		D2827A4F75C1EAF42073062D78B6A177 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0362D9D68A25EFC3BDC157341246D061 /* Pods-TBMtimeProject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A75ACCDC801476F9E0B49343C8A1733 /* Build configuration list for PBXNativeTarget "Pods-TBMtimeProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16A235C7A2FDD47FC05D8856C68E6976 /* Debug */,
-				D2827A4F75C1EAF42073062D78B6A177 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
 				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6547772F8B0E8BB1AF376DFDF6930E11 /* Build configuration list for PBXNativeTarget "Pods-TBMtimeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B0E462FB7580E7EA881AAF382C0C65 /* Debug */,
+				87E2376D7A8C87175EA6AD34B9B929E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
