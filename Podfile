@@ -12,10 +12,4 @@ target 'TBMtimeProject' do
   pod 'TBMtimeCommon', '0.0.1'
    
    
-   pod 'TBMtimeCommon', '0.0.1'
-
-   pod 'R.swift', '5.2.2'
-
-
-   
 end

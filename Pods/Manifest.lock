@@ -1,33 +1,25 @@
 PODS:
   - Alamofire (5.2.1)
-  - R.swift (5.2.2):
-    - R.swift.Library (~> 5.2.0)
-  - R.swift.Library (5.2.0)
   - TBMtimeBaseControll (0.0.1):
     - Alamofire (= 5.2.1)
   - TBMtimeCommon (0.0.1):
     - TBMtimeBaseControll (= 0.0.1)
 
 DEPENDENCIES:
-  - R.swift (= 5.2.2)
   - TBMtimeCommon (= 0.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - R.swift
-    - R.swift.Library
   https://github.com/tianbinbin/TBMtimePodSpec.git:
     - TBMtimeBaseControll
     - TBMtimeCommon
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
-  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
-  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   TBMtimeBaseControll: b020cd451e9a7cfa1244e22142ec3939db7f00a3
   TBMtimeCommon: 3132a4103fbc69586b3160ed27dc16b19b77d1ca
 
-PODFILE CHECKSUM: 33f57468c4644779c8becc07452e03c1d67c8b06
+PODFILE CHECKSUM: 8ba809dc47e05114c76322601480c59ba976423a
 
 COCOAPODS: 1.10.0

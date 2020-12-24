@@ -5,8 +5,6 @@
 //  Created by 田彬彬 on 2020/12/23.
 //
 
-import Rswift
-
 import TBMtimeBaseControll
 
 class MNFRxSwiftVC: MNFBaseViewController {
