@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "02165D5167BD3059F760C42A0403072B"
-               BuildableName = "libTBMtimeCommon.a"
+               BuildableName = "TBMtimeCommon.framework"
                BlueprintName = "TBMtimeCommon"
                ReferencedContainer = "container:TBMtimeCommon.xcodeproj">
             </BuildableReference>

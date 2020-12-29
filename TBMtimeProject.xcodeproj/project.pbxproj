@@ -22,7 +22,7 @@
 		085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */; };
 		085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F92591DA9B00E22902 /* MNVActorViewModel.swift */; };
 		085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */; };
-		78DF759177009D0956E5E77A /* libPods-TBMtimeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD03F4B4C331C9709F683B /* libPods-TBMtimeProject.a */; };
+		3FF5F1732C70D2B900C47E4C /* Pods_TBMtimeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +62,9 @@
 		085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFMovieDetailVC.swift; sourceTree = "<group>"; };
 		085451F92591DA9B00E22902 /* MNVActorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNVActorViewModel.swift; sourceTree = "<group>"; };
 		085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFActorDetailVC.swift; sourceTree = "<group>"; };
+		0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBMtimeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79AD5F30819EBBFF4743D6 /* Pods-TBMtimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.release.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.release.xcconfig"; sourceTree = "<group>"; };
 		7312E1ABF8A436EEACCB379F /* Pods-TBMtimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.debug.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.debug.xcconfig"; sourceTree = "<group>"; };
-		A6BD03F4B4C331C9709F683B /* libPods-TBMtimeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBMtimeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78DF759177009D0956E5E77A /* libPods-TBMtimeProject.a in Frameworks */,
+				3FF5F1732C70D2B900C47E4C /* Pods_TBMtimeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 		CDE6B5E7292D351D4C15BE5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6BD03F4B4C331C9709F683B /* libPods-TBMtimeProject.a */,
+				0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

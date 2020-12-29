@@ -1,7 +1,31 @@
 PODS:
   - Alamofire (5.2.1)
+  - Differentiator (4.0.1)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
   - TBMtimeBaseControll (0.0.1):
     - Alamofire (= 5.2.1)
+    - R.swift (= 5.2.2)
+    - RxCocoa (= 5.1.1)
+    - RxDataSources (= 4.0.1)
+    - RxGesture (= 3.0.2)
+    - RxSwift (= 5.1.1)
+    - SnapKit (= 5.0.1)
   - TBMtimeCommon (0.0.1):
     - TBMtimeBaseControll (= 0.0.1)
 
@@ -11,15 +35,33 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Differentiator
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SnapKit
   https://github.com/tianbinbin/TBMtimePodSpec.git:
     - TBMtimeBaseControll
     - TBMtimeCommon
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
-  TBMtimeBaseControll: b020cd451e9a7cfa1244e22142ec3939db7f00a3
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TBMtimeBaseControll: aeea3102f6f3739e77246146fcef4d6b9bc83c8e
   TBMtimeCommon: 3132a4103fbc69586b3160ed27dc16b19b77d1ca
 
-PODFILE CHECKSUM: 8ba809dc47e05114c76322601480c59ba976423a
+PODFILE CHECKSUM: aca7be8579c6f79fd24fdec61dce4f3a953d4da7
 
 COCOAPODS: 1.10.0

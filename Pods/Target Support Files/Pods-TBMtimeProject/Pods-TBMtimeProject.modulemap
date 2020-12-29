@@ -1,4 +1,4 @@
-module Pods_TBMtimeProject {
+framework module Pods_TBMtimeProject {
   umbrella header "Pods-TBMtimeProject-umbrella.h"
 
   export *

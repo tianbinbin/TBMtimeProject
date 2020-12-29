@@ -1,4 +1,4 @@
-module TBMtimeCommon {
+framework module TBMtimeCommon {
   umbrella header "TBMtimeCommon-umbrella.h"
 
   export *
