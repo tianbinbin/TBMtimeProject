@@ -11,6 +11,8 @@
 		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
 		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
 		084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3D525933E6000CB221E /* MNFMineVC.swift */; };
+		085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085337D3259AC19200475EF5 /* MNFHomeVC.swift */; };
+		085337DC259AC1EE00475EF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085337DB259AC1EE00475EF5 /* Home.storyboard */; };
 		085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085450CD2591C30C00E22902 /* AppDelegate.swift */; };
 		085450D22591C30C00E22902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085450D12591C30C00E22902 /* ViewController.swift */; };
 		085450D52591C30C00E22902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085450D32591C30C00E22902 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
 		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
 		084AD3D525933E6000CB221E /* MNFMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFMineVC.swift; sourceTree = "<group>"; };
+		085337D3259AC19200475EF5 /* MNFHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFHomeVC.swift; sourceTree = "<group>"; };
+		085337DB259AC1EE00475EF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		085450CA2591C30C00E22902 /* TBMtimeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBMtimeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		085450CD2591C30C00E22902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		085450D12591C30C00E22902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,23 @@
 			path = MineVCs;
 			sourceTree = "<group>";
 		};
+		085337D1259AC16000475EF5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				085337D2259AC18000475EF5 /* HomeVCs */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		085337D2259AC18000475EF5 /* HomeVCs */ = {
+			isa = PBXGroup;
+			children = (
+				085337D3259AC19200475EF5 /* MNFHomeVC.swift */,
+				085337DB259AC1EE00475EF5 /* Home.storyboard */,
+			);
+			path = HomeVCs;
+			sourceTree = "<group>";
+		};
 		085450C12591C30C00E22902 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +218,7 @@
 		085451F02591DA9B00E22902 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				085337D1259AC16000475EF5 /* Home */,
 				084AD3D225933E4300CB221E /* Mine */,
 				084AD3C825933D3300CB221E /* RxSwift */,
 				084AD0032592EA4E00CB221E /* EggsPopupWindow */,
@@ -387,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				085450DD2591C30F00E22902 /* LaunchScreen.storyboard in Resources */,
+				085337DC259AC1EE00475EF5 /* Home.storyboard in Resources */,
 				085450DA2591C30F00E22902 /* Assets.xcassets in Resources */,
 				084AD00E2592EAC000CB221E /* EggsView.xib in Resources */,
 				085450D52591C30C00E22902 /* Main.storyboard in Resources */,
@@ -457,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */,
+				085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */,
 				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
 				084AD0062592EAB300CB221E /* EggsView.swift in Sources */,
 				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,

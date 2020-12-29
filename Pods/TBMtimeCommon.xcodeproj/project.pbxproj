@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6F905C1C3E317B61928F17E4E181572D /* PBXContainerItemProxy */ = {
+		5FD6D00AA02D367D4575D0541D28B2EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C010CAAC95334A0741C71E8166AF4E2E /* TBMtimeBaseControll.xcodeproj */;
 			proxyType = 1;
@@ -177,7 +177,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D1D9BCAA523C46FB311B01D232249CCA /* PBXTargetDependency */,
+				096DBD240590DF795E49A1A6BE6E59E6 /* PBXTargetDependency */,
 				09F895151B3445C38DB17C66DC9FEF47 /* PBXTargetDependency */,
 			);
 			name = TBMtimeCommon;
@@ -275,16 +275,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		096DBD240590DF795E49A1A6BE6E59E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TBMtimeBaseControll;
+			targetProxy = 5FD6D00AA02D367D4575D0541D28B2EA /* PBXContainerItemProxy */;
+		};
 		09F895151B3445C38DB17C66DC9FEF47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TBMtimeCommon-TBMtimeCommon";
 			target = 6B633E8AAB935ED7386AB3DE44C1E233 /* TBMtimeCommon-TBMtimeCommon */;
 			targetProxy = A6F16456641CE4A678242ED4874162D2 /* PBXContainerItemProxy */;
-		};
-		D1D9BCAA523C46FB311B01D232249CCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TBMtimeBaseControll;
-			targetProxy = 6F905C1C3E317B61928F17E4E181572D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

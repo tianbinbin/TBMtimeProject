@@ -22,8 +22,7 @@ open class MNFBaseViewController:MTBViewController {
         if let path = Bundle(for: MNFBaseViewController.self).path(forResource: "TBMtimeBaseControll", ofType: "bundle") {
             let bundle = Bundle(path: path)!
             
-            let image = UIImage(named: "beijing", in: bundle, compatibleWith: nil)
-            imageView.image = image
+            imageView.image = R.image.beijing()
             imageView.backgroundColor = .orange
             imageView.isHidden = true
             view.addSubview(imageView)

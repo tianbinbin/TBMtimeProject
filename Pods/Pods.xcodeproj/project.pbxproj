@@ -41,13 +41,6 @@
 			remoteGlobalIDString = 51A3C6B0D85472E4377BE1104C7E10A6;
 			remoteInfo = RxDataSources;
 		};
-		91127E3B9CB4118D7822D553A1F42C38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70634583590A05EDEE71CEF1B750A1A5 /* TBMtimeBaseControll.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C5FE2659DC6F35C333F664DBDE70AF7;
-			remoteInfo = TBMtimeBaseControll;
-		};
 		B7F316322BFB0D72BE4EC25155C5CF6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 975E82299ED75B19BB287C8DE2C6FF41 /* TBMtimeCommon.xcodeproj */;
@@ -75,6 +68,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 81B7E9B7CD0CADA087A4BB042FBA92E7;
 			remoteInfo = Alamofire;
+		};
+		EB90565126E104962978632415B80B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70634583590A05EDEE71CEF1B750A1A5 /* TBMtimeBaseControll.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C5FE2659DC6F35C333F664DBDE70AF7;
+			remoteInfo = TBMtimeBaseControll;
 		};
 		EC0020FC515206B383C9D1A4EDCC1B85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -253,7 +253,7 @@
 				54B3299129C93256EFA7AF05D662365A /* PBXTargetDependency */,
 				ECB31F36CE2C794669BAEFF09ED173FB /* PBXTargetDependency */,
 				C090D15358D1631D3239D2728EE5FB2B /* PBXTargetDependency */,
-				1064A5A4D3A82B3533D6C66D6037B210 /* PBXTargetDependency */,
+				3ABEFB1437834FE9F2CB49A50BA864F4 /* PBXTargetDependency */,
 				13BDCC19E0B185DD1C8927AE530FBFAE /* PBXTargetDependency */,
 			);
 			name = "Pods-TBMtimeProject";
@@ -353,15 +353,15 @@
 			name = Alamofire;
 			targetProxy = DFEBB805F8FA72F5557D39B045252662 /* PBXContainerItemProxy */;
 		};
-		1064A5A4D3A82B3533D6C66D6037B210 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TBMtimeBaseControll;
-			targetProxy = 91127E3B9CB4118D7822D553A1F42C38 /* PBXContainerItemProxy */;
-		};
 		13BDCC19E0B185DD1C8927AE530FBFAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TBMtimeCommon;
 			targetProxy = B7F316322BFB0D72BE4EC25155C5CF6A /* PBXContainerItemProxy */;
+		};
+		3ABEFB1437834FE9F2CB49A50BA864F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TBMtimeBaseControll;
+			targetProxy = EB90565126E104962978632415B80B66 /* PBXContainerItemProxy */;
 		};
 		4757C3F11F234F75FAE7B399129865D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

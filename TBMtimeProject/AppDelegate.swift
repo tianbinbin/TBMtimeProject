@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import Rswift
+import TBMtimeBaseControll
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -53,7 +55,8 @@ extension AppDelegate {
         self.window?.backgroundColor = .white
         
         /// 1、 首页
-        let navOne = UINavigationController(rootViewController: MNFActorDetailVC())
+        
+        let navOne = UINavigationController(rootViewController: MNFHomeVC())
         navOne.tabBarItem.title = "首页"
 
         /// 2、影人
