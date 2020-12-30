@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084121E4259B194400F09646 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084121E3259B194400F09646 /* R.generated.swift */; };
 		084AD0062592EAB300CB221E /* EggsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD0052592EAB300CB221E /* EggsView.swift */; };
 		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
 		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084121E3259B194400F09646 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		084AD0052592EAB300CB221E /* EggsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsView.swift; sourceTree = "<group>"; };
 		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
 		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
@@ -186,9 +188,10 @@
 		085450CC2591C30C00E22902 /* TBMtimeProject */ = {
 			isa = PBXGroup;
 			children = (
-				085451F02591DA9B00E22902 /* Business */,
 				085451ED2591DA9B00E22902 /* Common */,
+				085451F02591DA9B00E22902 /* Business */,
 				085450CD2591C30C00E22902 /* AppDelegate.swift */,
+				084121E3259B194400F09646 /* R.generated.swift */,
 				085450D12591C30C00E22902 /* ViewController.swift */,
 				085450D32591C30C00E22902 /* Main.storyboard */,
 				085450D92591C30F00E22902 /* Assets.xcassets */,
@@ -311,6 +314,7 @@
 			buildConfigurationList = 085450F72591C31000E22902 /* Build configuration list for PBXNativeTarget "TBMtimeProject" */;
 			buildPhases = (
 				846C7F536FE907B98AFB416F /* [CP] Check Pods Manifest.lock */,
+				0841211D259B17CB00F09646 /* R.swift */,
 				085450C62591C30C00E22902 /* Sources */,
 				085450C72591C30C00E22902 /* Frameworks */,
 				085450C82591C30C00E22902 /* Resources */,
@@ -433,6 +437,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0841211D259B17CB00F09646 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/TBMtimeProject/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TBMtimeProject/R.generated.swift\"\n";
+		};
 		7D90FF196116EA387660A714 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +509,7 @@
 				084AD0062592EAB300CB221E /* EggsView.swift in Sources */,
 				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,
 				085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */,
+				084121E4259B194400F09646 /* R.generated.swift in Sources */,
 				085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */,
 				085450D22591C30C00E22902 /* ViewController.swift in Sources */,
 				084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */,

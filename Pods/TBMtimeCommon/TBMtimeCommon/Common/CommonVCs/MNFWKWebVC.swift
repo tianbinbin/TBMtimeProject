@@ -8,10 +8,23 @@
 import UIKit
 import Foundation
 
-class MNFWKWebVC: UIViewController {
+import TBMtimeBaseControll
+
+class MNFWKWebVC: MNFBaseViewController {
+    
+    lazy var imageView:UIImageView = {
+        
+        /// 组件话开发离不开bundle
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 300))
+        imageView.image = R.image.icon_eggs()
+        imageView.backgroundColor = .orange
+        return imageView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .orange
+    
+        view.addSubview(imageView)
     }
 }
