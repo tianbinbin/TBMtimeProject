@@ -282,16 +282,22 @@ struct _R: Rswift.Validatable {
     struct home: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let mnfHomeVC = StoryboardViewControllerResource<MNFHomeVC>(identifier: "MNFHomeVC")
+      let mnfRxSwiftVC = StoryboardViewControllerResource<MNFRxSwiftVC>(identifier: "MNFRxSwiftVC")
       let name = "Home"
 
       func mnfHomeVC(_: Void = ()) -> MNFHomeVC? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfHomeVC)
       }
 
+      func mnfRxSwiftVC(_: Void = ()) -> MNFRxSwiftVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfRxSwiftVC)
+      }
+
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.home().mnfHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfHomeVC' could not be loaded from storyboard 'Home' as 'MNFHomeVC'.") }
+        if _R.storyboard.home().mnfRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFRxSwiftVC'.") }
       }
 
       fileprivate init() {}

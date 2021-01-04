@@ -53,10 +53,10 @@ extension AppDelegate {
     func configRootTabbar() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = .white
-        
+    
         /// 1、 首页
-        
-        let navOne = UINavigationController(rootViewController: MNFHomeVC())
+        let vcHome = R.storyboard.home.mnfHomeVC()
+        let navOne = UINavigationController(rootViewController: vcHome!)
         navOne.tabBarItem.title = "首页"
 
         /// 2、影人

@@ -7,20 +7,33 @@
 
 import TBMtimeBaseControll
 
-class MNFHomeVC:MNFBaseViewController {
-    
-    lazy var imageView:UIImageView = {
-        
-        /// 组件话开发离不开bundle
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 300))
-        imageView.image = R.image.icon_eggsShow()
-        imageView.backgroundColor = .orange        
-        return imageView
-    }()
+class MNFHomeVC:UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(imageView)
+    }
+}
+
+extension MNFHomeVC {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            switch indexPath.row {
+            case 0:
+                let vcRxSwift = R.storyboard.home.mnfRxSwiftVC()
+                navigationController?.pushViewController(vcRxSwift!, animated: true)
+            case 1:
+                let vc = MNFDisbagVC()
+                navigationController?.pushViewController(vc, animated: true)
+            case 2:
+                let vc = MNFComBineLatestAndZIPVC()
+                navigationController?.pushViewController(vc, animated: true)
+        
+            default: break
+            }
+        default: break
+
+        }
     }
 }

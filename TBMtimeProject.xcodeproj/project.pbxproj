@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		084121E4259B194400F09646 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084121E3259B194400F09646 /* R.generated.swift */; };
+		0847EE6C25A2A47400EBD70E /* MNFDisbagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */; };
+		0847EE7125A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */; };
+		0847EE8525A2C1B500EBD70E /* MNFCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */; };
 		084AD0062592EAB300CB221E /* EggsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD0052592EAB300CB221E /* EggsView.swift */; };
 		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
 		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
@@ -47,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		084121E3259B194400F09646 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFDisbagVC.swift; sourceTree = "<group>"; };
+		0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFComBineLatestAndZIPVC.swift; sourceTree = "<group>"; };
+		0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFCellVC.swift; sourceTree = "<group>"; };
 		084AD0052592EAB300CB221E /* EggsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsView.swift; sourceTree = "<group>"; };
 		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
 		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
@@ -116,18 +122,13 @@
 			path = EggsViews;
 			sourceTree = "<group>";
 		};
-		084AD3C825933D3300CB221E /* RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				084AD3C925933D4100CB221E /* RxSwiftVCs */,
-			);
-			path = RxSwift;
-			sourceTree = "<group>";
-		};
 		084AD3C925933D4100CB221E /* RxSwiftVCs */ = {
 			isa = PBXGroup;
 			children = (
 				084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */,
+				0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */,
+				0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */,
+				0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */,
 			);
 			path = RxSwiftVCs;
 			sourceTree = "<group>";
@@ -151,6 +152,7 @@
 		085337D1259AC16000475EF5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				085337DB259AC1EE00475EF5 /* Home.storyboard */,
 				085337D2259AC18000475EF5 /* HomeVCs */,
 			);
 			path = Home;
@@ -160,9 +162,16 @@
 			isa = PBXGroup;
 			children = (
 				085337D3259AC19200475EF5 /* MNFHomeVC.swift */,
-				085337DB259AC1EE00475EF5 /* Home.storyboard */,
 			);
 			path = HomeVCs;
+			sourceTree = "<group>";
+		};
+		08543BF6259C54E200A4927F /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				084AD3C925933D4100CB221E /* RxSwiftVCs */,
+			);
+			path = Learn;
 			sourceTree = "<group>";
 		};
 		085450C12591C30C00E22902 = {
@@ -221,9 +230,9 @@
 		085451F02591DA9B00E22902 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				08543BF6259C54E200A4927F /* Learn */,
 				085337D1259AC16000475EF5 /* Home */,
 				084AD3D225933E4300CB221E /* Mine */,
-				084AD3C825933D3300CB221E /* RxSwift */,
 				084AD0032592EA4E00CB221E /* EggsPopupWindow */,
 				085451F12591DA9B00E22902 /* Demo */,
 				085451F42591DA9B00E22902 /* Movie */,
@@ -507,6 +516,7 @@
 				085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */,
 				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
 				084AD0062592EAB300CB221E /* EggsView.swift in Sources */,
+				0847EE8525A2C1B500EBD70E /* MNFCellVC.swift in Sources */,
 				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,
 				085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */,
 				084121E4259B194400F09646 /* R.generated.swift in Sources */,
@@ -515,6 +525,8 @@
 				084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */,
 				085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */,
 				085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */,
+				0847EE6C25A2A47400EBD70E /* MNFDisbagVC.swift in Sources */,
+				0847EE7125A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift in Sources */,
 				085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
