@@ -211,6 +211,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `CELLID`.
+    static let celliD: Rswift.ReuseIdentifier<UIKit.UIView> = Rswift.ReuseIdentifier(identifier: "CELLID")
+    /// Reuse identifier `Cellidid`.
+    static let cellidid: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "Cellidid")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -281,9 +291,15 @@ struct _R: Rswift.Validatable {
     #if os(iOS) || os(tvOS)
     struct home: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
+      let mnfCellVC = StoryboardViewControllerResource<MNFCellVC>(identifier: "MNFCellVC")
       let mnfHomeVC = StoryboardViewControllerResource<MNFHomeVC>(identifier: "MNFHomeVC")
       let mnfRxSwiftVC = StoryboardViewControllerResource<MNFRxSwiftVC>(identifier: "MNFRxSwiftVC")
+      let mnfTableViewVC = StoryboardViewControllerResource<MNFTableViewVC>(identifier: "MNFTableViewVC")
       let name = "Home"
+
+      func mnfCellVC(_: Void = ()) -> MNFCellVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfCellVC)
+      }
 
       func mnfHomeVC(_: Void = ()) -> MNFHomeVC? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfHomeVC)
@@ -293,11 +309,17 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfRxSwiftVC)
       }
 
+      func mnfTableViewVC(_: Void = ()) -> MNFTableViewVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfTableViewVC)
+      }
+
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.home().mnfCellVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfCellVC' could not be loaded from storyboard 'Home' as 'MNFCellVC'.") }
         if _R.storyboard.home().mnfHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfHomeVC' could not be loaded from storyboard 'Home' as 'MNFHomeVC'.") }
         if _R.storyboard.home().mnfRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFRxSwiftVC'.") }
+        if _R.storyboard.home().mnfTableViewVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfTableViewVC' could not be loaded from storyboard 'Home' as 'MNFTableViewVC'.") }
       }
 
       fileprivate init() {}

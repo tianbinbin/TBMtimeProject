@@ -29,6 +29,12 @@ extension MNFHomeVC {
             case 2:
                 let vc = MNFComBineLatestAndZIPVC()
                 navigationController?.pushViewController(vc, animated: true)
+            case 3:
+                let vc = R.storyboard.home.mnfCellVC()
+                navigationController?.pushViewController(vc!, animated: true)
+            case 4:
+                let vc = R.storyboard.home.mnfTableViewVC()
+                navigationController?.pushViewController(vc!, animated: true)
         
             default: break
             }

@@ -1,5 +1,5 @@
 //
-//  MNFCellVC.swift
+//  MNFTableViewVC.swift
 //  TBMtimeProject
 //
 //  Created by 田彬彬 on 2021/1/4.
@@ -9,13 +9,11 @@ import TBMtimeBaseControll
 import RxCocoa
 import RxSwift
 
-class MNFCellVC: MNFBaseViewController,UICollectionViewDelegate {
-
+class MNFTableViewVC: MNFBaseViewController {
     
-        
-    @IBOutlet weak var collectionview: UICollectionView!
+    @IBOutlet weak var tableview: UITableView!
+    
     fileprivate lazy var bag = DisposeBag()
-    
     var dataBehavor : BehaviorRelay<[Int]> = {
         var array = [Int]()
         for i in 0...100
@@ -30,20 +28,17 @@ class MNFCellVC: MNFBaseViewController,UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        dataBehavor.asObservable().bind(to: collectionview.rx.items(cellIdentifier: "CELLID", cellType: UICollectionViewCell.self)){row,model,cell in
-            
+        dataBehavor.asObservable().bind(to: tableview.rx.items(cellIdentifier: "Cellidid", cellType: UITableViewCell.self)){ row,model,cell in
             print("打印一下当前的\(row)--\(model)")
             
-            print("2222222")
+            let customcell = cell as? UITableViewCell
             
-            
+            customcell?.textLabel?.text = "\(row)"
         }
+        
     }
 
     deinit {
         print("MNFCellVC 释放了")
     }
 }
-
-
-

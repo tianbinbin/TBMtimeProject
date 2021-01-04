@@ -11,6 +11,7 @@
 		0847EE6C25A2A47400EBD70E /* MNFDisbagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */; };
 		0847EE7125A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */; };
 		0847EE8525A2C1B500EBD70E /* MNFCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */; };
+		0847EECC25A2EFB200EBD70E /* MNFTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EECB25A2EFB200EBD70E /* MNFTableViewVC.swift */; };
 		084AD0062592EAB300CB221E /* EggsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD0052592EAB300CB221E /* EggsView.swift */; };
 		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
 		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
@@ -53,6 +54,7 @@
 		0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFDisbagVC.swift; sourceTree = "<group>"; };
 		0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFComBineLatestAndZIPVC.swift; sourceTree = "<group>"; };
 		0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFCellVC.swift; sourceTree = "<group>"; };
+		0847EECB25A2EFB200EBD70E /* MNFTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFTableViewVC.swift; sourceTree = "<group>"; };
 		084AD0052592EAB300CB221E /* EggsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsView.swift; sourceTree = "<group>"; };
 		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
 		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */,
 				0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */,
 				0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */,
+				0847EECB25A2EFB200EBD70E /* MNFTableViewVC.swift */,
 			);
 			path = RxSwiftVCs;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				084121E4259B194400F09646 /* R.generated.swift in Sources */,
 				085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */,
 				085450D22591C30C00E22902 /* ViewController.swift in Sources */,
+				0847EECC25A2EFB200EBD70E /* MNFTableViewVC.swift in Sources */,
 				084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */,
 				085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */,
 				085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */,
