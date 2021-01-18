@@ -52,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		084121E3259B194400F09646 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		0846F6F525B5895800609559 /* TBMtimeProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBMtimeProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFDisbagVC.swift; sourceTree = "<group>"; };
 		0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFComBineLatestAndZIPVC.swift; sourceTree = "<group>"; };
 		0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFCellVC.swift; sourceTree = "<group>"; };
@@ -109,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0846F6EA25B587F700609559 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				0846F6F525B5895800609559 /* TBMtimeProject-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
 		084AD0032592EA4E00CB221E /* EggsPopupWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +229,7 @@
 		085451ED2591DA9B00E22902 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0846F6EA25B587F700609559 /* BridgingHeader */,
 				085451EE2591DA9B00E22902 /* CommonHeader */,
 			);
 			path = Common;
@@ -721,6 +731,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime.TBMtimeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TBMtimeProject/Common/BridgingHeader/TBMtimeProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -743,6 +754,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime.TBMtimeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TBMtimeProject/Common/BridgingHeader/TBMtimeProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

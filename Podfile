@@ -15,6 +15,7 @@ target 'TBMtimeProject' do
 
   pod 'TBMtimeCommon', '0.0.1'
   
+  pod 'JVerification', '2.6.3' # 手机一键登录
 
    
    
