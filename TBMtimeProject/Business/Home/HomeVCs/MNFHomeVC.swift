@@ -35,8 +35,15 @@ extension MNFHomeVC {
             case 4:
                 let vc = R.storyboard.home.mnfTableViewVC()
                 navigationController?.pushViewController(vc!, animated: true)
-        
             default: break
+            }
+            
+        case 1:
+            switch indexPath.row {
+            case 0:
+                let vc = R.storyboard.home.mnfSwiftUIVC()
+                navigationController?.pushViewController(vc!, animated: true)
+            default:break
             }
         default: break
 

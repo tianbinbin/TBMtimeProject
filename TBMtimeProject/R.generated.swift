@@ -294,6 +294,7 @@ struct _R: Rswift.Validatable {
       let mnfCellVC = StoryboardViewControllerResource<MNFCellVC>(identifier: "MNFCellVC")
       let mnfHomeVC = StoryboardViewControllerResource<MNFHomeVC>(identifier: "MNFHomeVC")
       let mnfRxSwiftVC = StoryboardViewControllerResource<MNFRxSwiftVC>(identifier: "MNFRxSwiftVC")
+      let mnfSwiftUIVC = StoryboardViewControllerResource<MNFSwiftUIVC>(identifier: "MNFSwiftUIVC")
       let mnfTableViewVC = StoryboardViewControllerResource<MNFTableViewVC>(identifier: "MNFTableViewVC")
       let name = "Home"
 
@@ -309,6 +310,10 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfRxSwiftVC)
       }
 
+      func mnfSwiftUIVC(_: Void = ()) -> MNFSwiftUIVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfSwiftUIVC)
+      }
+
       func mnfTableViewVC(_: Void = ()) -> MNFTableViewVC? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfTableViewVC)
       }
@@ -319,6 +324,7 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.home().mnfCellVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfCellVC' could not be loaded from storyboard 'Home' as 'MNFCellVC'.") }
         if _R.storyboard.home().mnfHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfHomeVC' could not be loaded from storyboard 'Home' as 'MNFHomeVC'.") }
         if _R.storyboard.home().mnfRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFRxSwiftVC'.") }
+        if _R.storyboard.home().mnfSwiftUIVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfSwiftUIVC' could not be loaded from storyboard 'Home' as 'MNFSwiftUIVC'.") }
         if _R.storyboard.home().mnfTableViewVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfTableViewVC' could not be loaded from storyboard 'Home' as 'MNFTableViewVC'.") }
       }
 
