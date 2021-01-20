@@ -8,8 +8,6 @@
 
 import TBMtimeBaseControll
 
-
-
 import UIKit
 
 class MNFMineVC: MNFBaseViewController {

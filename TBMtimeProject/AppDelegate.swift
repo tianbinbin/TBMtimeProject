@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         configRootTabbar()
         
+        congfigPhoneLogin() 
+        
         return true
     }
     lazy var persistentContainer: NSPersistentContainer = {
@@ -73,5 +75,10 @@ extension AppDelegate {
         
         self.window?.rootViewController = tabbar
         self.window?.makeKeyAndVisible()
+    }
+    
+    /// 初始化一键登录
+    func congfigPhoneLogin() {
+        JPPhoneLogin.initializeThePhoneToLog()
     }
 }

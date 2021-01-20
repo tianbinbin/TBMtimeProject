@@ -140,8 +140,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 15 images.
   struct image {
+    /// Image `checkBox_selected`.
+    static let checkBox_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "checkBox_selected")
+    /// Image `checkBox_unSelected`.
+    static let checkBox_unSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "checkBox_unSelected")
+    /// Image `close`.
+    static let close = Rswift.ImageResource(bundle: R.hostingBundle, name: "close")
+    /// Image `cmccLogo`.
+    static let cmccLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "cmccLogo")
+    /// Image `ctccLogo`.
+    static let ctccLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "ctccLogo")
+    /// Image `cuccLogo`.
+    static let cuccLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "cuccLogo")
     /// Image `icon_eggsClose`.
     static let icon_eggsClose = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_eggsClose")
     /// Image `icon_eggsClosebtn`.
@@ -150,8 +162,58 @@ struct R: Rswift.Validatable {
     static let icon_eggsShow = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_eggsShow")
     /// Image `icon_eggsTitle`.
     static let icon_eggsTitle = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_eggsTitle")
+    /// Image `loginBtn_Dis`.
+    static let loginBtn_Dis = Rswift.ImageResource(bundle: R.hostingBundle, name: "loginBtn_Dis")
+    /// Image `loginBtn_Hig`.
+    static let loginBtn_Hig = Rswift.ImageResource(bundle: R.hostingBundle, name: "loginBtn_Hig")
+    /// Image `loginBtn_Nor`.
+    static let loginBtn_Nor = Rswift.ImageResource(bundle: R.hostingBundle, name: "loginBtn_Nor")
     /// Image `sharebtn`.
     static let sharebtn = Rswift.ImageResource(bundle: R.hostingBundle, name: "sharebtn")
+    /// Image `windowClose`.
+    static let windowClose = Rswift.ImageResource(bundle: R.hostingBundle, name: "windowClose")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "checkBox_selected", bundle: ..., traitCollection: ...)`
+    static func checkBox_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.checkBox_selected, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "checkBox_unSelected", bundle: ..., traitCollection: ...)`
+    static func checkBox_unSelected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.checkBox_unSelected, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "close", bundle: ..., traitCollection: ...)`
+    static func close(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.close, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "cmccLogo", bundle: ..., traitCollection: ...)`
+    static func cmccLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cmccLogo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ctccLogo", bundle: ..., traitCollection: ...)`
+    static func ctccLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ctccLogo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "cuccLogo", bundle: ..., traitCollection: ...)`
+    static func cuccLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cuccLogo, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_eggsClose", bundle: ..., traitCollection: ...)`
@@ -182,9 +244,37 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "loginBtn_Dis", bundle: ..., traitCollection: ...)`
+    static func loginBtn_Dis(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loginBtn_Dis, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "loginBtn_Hig", bundle: ..., traitCollection: ...)`
+    static func loginBtn_Hig(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loginBtn_Hig, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "loginBtn_Nor", bundle: ..., traitCollection: ...)`
+    static func loginBtn_Nor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loginBtn_Nor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "sharebtn", bundle: ..., traitCollection: ...)`
     static func sharebtn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.sharebtn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "windowClose", bundle: ..., traitCollection: ...)`
+    static func windowClose(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.windowClose, compatibleWith: traitCollection)
     }
     #endif
 
@@ -296,6 +386,7 @@ struct _R: Rswift.Validatable {
       let mnfRxSwiftVC = StoryboardViewControllerResource<MNFRxSwiftVC>(identifier: "MNFRxSwiftVC")
       let mnfSwiftUIVC = StoryboardViewControllerResource<MNFSwiftUIVC>(identifier: "MNFSwiftUIVC")
       let mnfTableViewVC = StoryboardViewControllerResource<MNFTableViewVC>(identifier: "MNFTableViewVC")
+      let mnfjPhoneLoginVC = StoryboardViewControllerResource<MNFJPhoneLoginVC>(identifier: "MNFJPhoneLoginVC")
       let name = "Home"
 
       func mnfCellVC(_: Void = ()) -> MNFCellVC? {
@@ -318,11 +409,16 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfTableViewVC)
       }
 
+      func mnfjPhoneLoginVC(_: Void = ()) -> MNFJPhoneLoginVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfjPhoneLoginVC)
+      }
+
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.home().mnfCellVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfCellVC' could not be loaded from storyboard 'Home' as 'MNFCellVC'.") }
         if _R.storyboard.home().mnfHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfHomeVC' could not be loaded from storyboard 'Home' as 'MNFHomeVC'.") }
+        if _R.storyboard.home().mnfjPhoneLoginVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfjPhoneLoginVC' could not be loaded from storyboard 'Home' as 'MNFJPhoneLoginVC'.") }
         if _R.storyboard.home().mnfRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFRxSwiftVC'.") }
         if _R.storyboard.home().mnfSwiftUIVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfSwiftUIVC' could not be loaded from storyboard 'Home' as 'MNFSwiftUIVC'.") }
         if _R.storyboard.home().mnfTableViewVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfTableViewVC' could not be loaded from storyboard 'Home' as 'MNFTableViewVC'.") }

@@ -43,6 +43,9 @@ extension MNFHomeVC {
             case 0:
                 let vc = R.storyboard.home.mnfSwiftUIVC()
                 navigationController?.pushViewController(vc!, animated: true)
+            case 1:
+                let vc = R.storyboard.home.mnfjPhoneLoginVC()
+                navigationController?.pushViewController(vc!, animated: true)
             default:break
             }
         default: break

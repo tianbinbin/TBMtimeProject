@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5E9E02D33AA004C6AA69900E43C9EADB /* JVerification */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4EAA32FCFF3B6C4E9D22EC9D0730188 /* Build configuration list for PBXAggregateTarget "JVerification" */;
+			buildPhases = (
+			);
+			dependencies = (
+				EC4DA6063EC591CAFF3777FDF6BDD1AA /* PBXTargetDependency */,
+			);
+			name = JVerification;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		D4CEACF088A961D5A20A7DD8E529ED7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C317266AE045FC031F2E8E7BF658664B /* JCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A6F7F03566569D5BCDDCE87A1131EB;
+			remoteInfo = JCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0909C37D8BDB3EA7840CB6C9F0096FE5 /* libjverification-ios-2.6.3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjverification-ios-2.6.3.a"; sourceTree = "<group>"; };
+		13110E0DF1BA5BE1879B2A153E11BC9F /* TYRZSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZSDK.framework; sourceTree = "<group>"; };
+		4DF87965FAE8C4B66741C421A7B10E90 /* OAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuth.framework; sourceTree = "<group>"; };
+		5300F6094F833C6B426E17540C727224 /* JVerification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JVerification.debug.xcconfig; sourceTree = "<group>"; };
+		7AF3F7284C3B24C30C8F510328E35AA2 /* JVERIFICATIONService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JVERIFICATIONService.h; sourceTree = "<group>"; };
+		ACAC2C7CFF4382A8DB7654BC0840D898 /* JVerification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JVerification.release.xcconfig; sourceTree = "<group>"; };
+		C317266AE045FC031F2E8E7BF658664B /* JCore */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCore; path = JCore.xcodeproj; sourceTree = "<group>"; };
+		D9337951D12A9A46E402F8AC8987B53D /* EAccountApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountApiSDK.framework; sourceTree = "<group>"; };
+		FE32F60D4E162DF2630420C882F25155 /* account_login_sdk_noui_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = account_login_sdk_noui_core.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		092F9ED6E680B0FD3CB6D9484A6D6526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5566646D4D5A799FE69C7C44E0F3B9B7 = {
+			isa = PBXGroup;
+			children = (
+				8A030769DF7A3561CDF451D2214BD49D /* Dependencies */,
+				FB3D31BC5C6C5A6B8C6210A9DBD45DE4 /* Frameworks */,
+				B042EC1A1163B9A53C52B5E1D76D3875 /* JVerification */,
+				092F9ED6E680B0FD3CB6D9484A6D6526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A030769DF7A3561CDF451D2214BD49D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C317266AE045FC031F2E8E7BF658664B /* JCore */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		B042EC1A1163B9A53C52B5E1D76D3875 /* JVerification */ = {
+			isa = PBXGroup;
+			children = (
+				7AF3F7284C3B24C30C8F510328E35AA2 /* JVERIFICATIONService.h */,
+				B5A0EE536ADDDF0CB8DCA29D71B7AA83 /* Frameworks */,
+				D0A3DBC623C514FD2B3CDC0189DCD7AB /* Support Files */,
+			);
+			name = JVerification;
+			path = JVerification;
+			sourceTree = "<group>";
+		};
+		B5A0EE536ADDDF0CB8DCA29D71B7AA83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE32F60D4E162DF2630420C882F25155 /* account_login_sdk_noui_core.framework */,
+				D9337951D12A9A46E402F8AC8987B53D /* EAccountApiSDK.framework */,
+				0909C37D8BDB3EA7840CB6C9F0096FE5 /* libjverification-ios-2.6.3.a */,
+				4DF87965FAE8C4B66741C421A7B10E90 /* OAuth.framework */,
+				13110E0DF1BA5BE1879B2A153E11BC9F /* TYRZSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A3DBC623C514FD2B3CDC0189DCD7AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5300F6094F833C6B426E17540C727224 /* JVerification.debug.xcconfig */,
+				ACAC2C7CFF4382A8DB7654BC0840D898 /* JVerification.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JVerification";
+			sourceTree = "<group>";
+		};
+		FB3D31BC5C6C5A6B8C6210A9DBD45DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		551B5D888EB5B87AF2D5B8E74ADC8D1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 9FE5734F7C0AF65ED4542F15EC5BEA8E /* Build configuration list for PBXProject "JVerification" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5566646D4D5A799FE69C7C44E0F3B9B7;
+			productRefGroup = 092F9ED6E680B0FD3CB6D9484A6D6526 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProjectRef = C317266AE045FC031F2E8E7BF658664B /* JCore */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5E9E02D33AA004C6AA69900E43C9EADB /* JVerification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXTargetDependency section */
+		EC4DA6063EC591CAFF3777FDF6BDD1AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCore;
+			targetProxy = D4CEACF088A961D5A20A7DD8E529ED7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EDE63605C4E926F5096A050CBCA6DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5300F6094F833C6B426E17540C727224 /* JVerification.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		458E635150417643F5C9EB98F2F8F09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACAC2C7CFF4382A8DB7654BC0840D898 /* JVerification.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FCE3D898082B8E977D2EAAAD233938C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		71C9A4D2261C385C80621D72BFDF4AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FE5734F7C0AF65ED4542F15EC5BEA8E /* Build configuration list for PBXProject "JVerification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCE3D898082B8E977D2EAAAD233938C /* Debug */,
+				71C9A4D2261C385C80621D72BFDF4AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4EAA32FCFF3B6C4E9D22EC9D0730188 /* Build configuration list for PBXAggregateTarget "JVerification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EDE63605C4E926F5096A050CBCA6DE5 /* Debug */,
+				458E635150417643F5C9EB98F2F8F09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 551B5D888EB5B87AF2D5B8E74ADC8D1D /* Project object */;
+}

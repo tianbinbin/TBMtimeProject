@@ -30,7 +30,8 @@
 		085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */; };
 		085451FF2591DA9C00E22902 /* MNVActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451F92591DA9B00E22902 /* MNVActorViewModel.swift */; };
 		085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */; };
-		3FF5F1732C70D2B900C47E4C /* Pods_TBMtimeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */; };
+		086A500625B677D200C6D29E /* MNFJPhoneLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */; };
+		086A500E25B6782500C6D29E /* JPPhoneLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A500D25B6782500C6D29E /* JPPhoneLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		085451F62591DA9B00E22902 /* MNFMovieDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFMovieDetailVC.swift; sourceTree = "<group>"; };
 		085451F92591DA9B00E22902 /* MNVActorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNVActorViewModel.swift; sourceTree = "<group>"; };
 		085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFActorDetailVC.swift; sourceTree = "<group>"; };
+		086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFJPhoneLoginVC.swift; sourceTree = "<group>"; };
+		086A500D25B6782500C6D29E /* JPPhoneLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhoneLogin.swift; sourceTree = "<group>"; };
 		0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBMtimeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79AD5F30819EBBFF4743D6 /* Pods-TBMtimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.release.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.release.xcconfig"; sourceTree = "<group>"; };
 		7312E1ABF8A436EEACCB379F /* Pods-TBMtimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.debug.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF5F1732C70D2B900C47E4C /* Pods_TBMtimeProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +248,7 @@
 		085451F02591DA9B00E22902 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				086A500225B6778D00C6D29E /* JPhoneLogin */,
 				08543BF6259C54E200A4927F /* Learn */,
 				085337D1259AC16000475EF5 /* Home */,
 				084AD3D225933E4300CB221E /* Mine */,
@@ -312,6 +315,23 @@
 				085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */,
 			);
 			path = ActorVCs;
+			sourceTree = "<group>";
+		};
+		086A500225B6778D00C6D29E /* JPhoneLogin */ = {
+			isa = PBXGroup;
+			children = (
+				086A500325B677A000C6D29E /* JPhoneLoginVCs */,
+			);
+			path = JPhoneLogin;
+			sourceTree = "<group>";
+		};
+		086A500325B677A000C6D29E /* JPhoneLoginVCs */ = {
+			isa = PBXGroup;
+			children = (
+				086A500D25B6782500C6D29E /* JPPhoneLogin.swift */,
+				086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */,
+			);
+			path = JPhoneLoginVCs;
 			sourceTree = "<group>";
 		};
 		7E0C918A79A6E5D211138101 /* Pods */ = {
@@ -530,8 +550,10 @@
 			files = (
 				084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */,
 				085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */,
+				086A500E25B6782500C6D29E /* JPPhoneLogin.swift in Sources */,
 				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
 				084AD0062592EAB300CB221E /* EggsView.swift in Sources */,
+				086A500625B677D200C6D29E /* MNFJPhoneLoginVC.swift in Sources */,
 				0847EE8525A2C1B500EBD70E /* MNFCellVC.swift in Sources */,
 				085451FD2591DA9B00E22902 /* MNFDemoPushVC.swift in Sources */,
 				0847EF2725A30A9100EBD70E /* MNFSwiftUIVC.swift in Sources */,
@@ -635,6 +657,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -656,6 +679,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -696,6 +720,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -720,8 +745,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FEL65848P8;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TT7U2NHS56;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				INFOPLIST_FILE = TBMtimeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,11 +756,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime.TBMtimeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 99_Dev_Net;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TBMtimeProject/Common/BridgingHeader/TBMtimeProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64 x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -743,8 +772,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FEL65848P8;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TT7U2NHS56;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				INFOPLIST_FILE = TBMtimeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -752,11 +783,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime.TBMtimeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 99_Dev_Net;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TBMtimeProject/Common/BridgingHeader/TBMtimeProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

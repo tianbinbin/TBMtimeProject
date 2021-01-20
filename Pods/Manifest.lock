@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (5.2.1)
   - Differentiator (4.0.1)
+  - JCore (2.4.0)
+  - JVerification (2.6.3):
+    - JCore (< 6.0.0, >= 2.1.6)
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
@@ -30,12 +33,15 @@ PODS:
     - TBMtimeBaseControll (= 0.0.1)
 
 DEPENDENCIES:
+  - JVerification (= 2.6.3)
   - TBMtimeCommon (= 0.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Differentiator
+    - JCore
+    - JVerification
     - R.swift
     - R.swift.Library
     - RxCocoa
@@ -51,6 +57,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
+  JVerification: 7e428f4fb818c1263472f0cffb93e34a3cf4bd66
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -62,6 +70,6 @@ SPEC CHECKSUMS:
   TBMtimeBaseControll: 6d4c6511c865504ea10a72818189e2da2f176c93
   TBMtimeCommon: 5a963167fbe3d0349c0318ebf3c676c7cf256d51
 
-PODFILE CHECKSUM: 057da4038ee7b1a526646cd1250fed4cf26035f9
+PODFILE CHECKSUM: d3aaee9d7cae0c7338694b7bca34b735e6bd02c8
 
 COCOAPODS: 1.10.0
