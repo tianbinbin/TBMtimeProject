@@ -13,7 +13,7 @@ import RxSwift
 class MNFComBineLatestAndZIPVC: MNFBaseViewController {
     
     let bag = DisposeBag ()
-    
+
     let queueA = PublishSubject<String>()
     let queueB = PublishSubject<String>()
     

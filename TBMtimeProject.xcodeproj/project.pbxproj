@@ -15,7 +15,6 @@
 		0847EF2725A30A9100EBD70E /* MNFSwiftUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0847EF2625A30A9100EBD70E /* MNFSwiftUIVC.swift */; };
 		084AD0062592EAB300CB221E /* EggsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD0052592EAB300CB221E /* EggsView.swift */; };
 		084AD00E2592EAC000CB221E /* EggsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AD00D2592EAC000CB221E /* EggsView.xib */; };
-		084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */; };
 		084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084AD3D525933E6000CB221E /* MNFMineVC.swift */; };
 		085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085337D3259AC19200475EF5 /* MNFHomeVC.swift */; };
 		085337DC259AC1EE00475EF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085337DB259AC1EE00475EF5 /* Home.storyboard */; };
@@ -32,6 +31,17 @@
 		085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */; };
 		086A500625B677D200C6D29E /* MNFJPhoneLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */; };
 		086A500E25B6782500C6D29E /* JPPhoneLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A500D25B6782500C6D29E /* JPPhoneLogin.swift */; };
+		086C6F3C265F438700E4E71C /* MNFCustomRxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C6F3B265F438700E4E71C /* MNFCustomRxSwiftVC.swift */; };
+		086C6F44265F462800E4E71C /* RxSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086C6F43265F462800E4E71C /* RxSwift.storyboard */; };
+		086C6F49265F465300E4E71C /* MNFObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C6F48265F465300E4E71C /* MNFObservableVC.swift */; };
+		0871A81B25B952E6009B6C87 /* JGOphoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871A81A25B952E6009B6C87 /* JGOphoneViewModel.swift */; };
+		0898701F26662B0F00A54A7C /* RXVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898701E26662B0F00A54A7C /* RXVM.swift */; };
+		0898702826662B7000A54A7C /* RXModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898702726662B7000A54A7C /* RXModel.swift */; };
+		08B3974925E7787B002AEA27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B3974825E7787B002AEA27 /* CustomView.swift */; };
+		08B3979925E77979002AEA27 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B3979825E77979002AEA27 /* CustomView.xib */; };
+		08B397F425E77D42002AEA27 /* UIWindowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B397F325E77D42002AEA27 /* UIWindowExt.swift */; };
+		08B397F925E77DED002AEA27 /* NSObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B397F825E77DED002AEA27 /* NSObjectExt.swift */; };
+		08B397FE25E783C9002AEA27 /* HongmeiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B397FD25E783C9002AEA27 /* HongmeiVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +71,6 @@
 		0847EF2625A30A9100EBD70E /* MNFSwiftUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFSwiftUIVC.swift; sourceTree = "<group>"; };
 		084AD0052592EAB300CB221E /* EggsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsView.swift; sourceTree = "<group>"; };
 		084AD00D2592EAC000CB221E /* EggsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggsView.xib; sourceTree = "<group>"; };
-		084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFRxSwiftVC.swift; sourceTree = "<group>"; };
 		084AD3D525933E6000CB221E /* MNFMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFMineVC.swift; sourceTree = "<group>"; };
 		085337D3259AC19200475EF5 /* MNFHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFHomeVC.swift; sourceTree = "<group>"; };
 		085337DB259AC1EE00475EF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -82,6 +91,17 @@
 		085451FB2591DA9B00E22902 /* MNFActorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFActorDetailVC.swift; sourceTree = "<group>"; };
 		086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFJPhoneLoginVC.swift; sourceTree = "<group>"; };
 		086A500D25B6782500C6D29E /* JPPhoneLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPPhoneLogin.swift; sourceTree = "<group>"; };
+		086C6F3B265F438700E4E71C /* MNFCustomRxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFCustomRxSwiftVC.swift; sourceTree = "<group>"; };
+		086C6F43265F462800E4E71C /* RxSwift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxSwift.storyboard; sourceTree = "<group>"; };
+		086C6F48265F465300E4E71C /* MNFObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFObservableVC.swift; sourceTree = "<group>"; };
+		0871A81A25B952E6009B6C87 /* JGOphoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGOphoneViewModel.swift; sourceTree = "<group>"; };
+		0898701E26662B0F00A54A7C /* RXVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXVM.swift; sourceTree = "<group>"; };
+		0898702726662B7000A54A7C /* RXModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXModel.swift; sourceTree = "<group>"; };
+		08B3974825E7787B002AEA27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		08B3979825E77979002AEA27 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		08B397F325E77D42002AEA27 /* UIWindowExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExt.swift; sourceTree = "<group>"; };
+		08B397F825E77DED002AEA27 /* NSObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExt.swift; sourceTree = "<group>"; };
+		08B397FD25E783C9002AEA27 /* HongmeiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongmeiVC.swift; sourceTree = "<group>"; };
 		0C6C959A636CD75A1534D7DF /* Pods_TBMtimeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBMtimeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79AD5F30819EBBFF4743D6 /* Pods-TBMtimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.release.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.release.xcconfig"; sourceTree = "<group>"; };
 		7312E1ABF8A436EEACCB379F /* Pods-TBMtimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBMtimeProject.debug.xcconfig"; path = "Target Support Files/Pods-TBMtimeProject/Pods-TBMtimeProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,12 +160,13 @@
 		084AD3C925933D4100CB221E /* RxSwiftVCs */ = {
 			isa = PBXGroup;
 			children = (
-				084AD3CA25933D6500CB221E /* MNFRxSwiftVC.swift */,
 				0847EE6B25A2A47400EBD70E /* MNFDisbagVC.swift */,
 				0847EE7025A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift */,
 				0847EE8425A2C1B500EBD70E /* MNFCellVC.swift */,
 				0847EECB25A2EFB200EBD70E /* MNFTableViewVC.swift */,
 				0847EF2625A30A9100EBD70E /* MNFSwiftUIVC.swift */,
+				086C6F3B265F438700E4E71C /* MNFCustomRxSwiftVC.swift */,
+				086C6F48265F465300E4E71C /* MNFObservableVC.swift */,
 			);
 			path = RxSwiftVCs;
 			sourceTree = "<group>";
@@ -170,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				085337DB259AC1EE00475EF5 /* Home.storyboard */,
+				086C6F43265F462800E4E71C /* RxSwift.storyboard */,
 				085337D2259AC18000475EF5 /* HomeVCs */,
 			);
 			path = Home;
@@ -186,6 +208,8 @@
 		08543BF6259C54E200A4927F /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				0898702626662B5E00A54A7C /* Model */,
+				0898701D26662AF500A54A7C /* ViewModel */,
 				084AD3C925933D4100CB221E /* RxSwiftVCs */,
 			);
 			path = Learn;
@@ -328,10 +352,32 @@
 		086A500325B677A000C6D29E /* JPhoneLoginVCs */ = {
 			isa = PBXGroup;
 			children = (
+				08B397F325E77D42002AEA27 /* UIWindowExt.swift */,
 				086A500D25B6782500C6D29E /* JPPhoneLogin.swift */,
 				086A500525B677D200C6D29E /* MNFJPhoneLoginVC.swift */,
+				0871A81A25B952E6009B6C87 /* JGOphoneViewModel.swift */,
+				08B397F825E77DED002AEA27 /* NSObjectExt.swift */,
+				08B3974825E7787B002AEA27 /* CustomView.swift */,
+				08B3979825E77979002AEA27 /* CustomView.xib */,
+				08B397FD25E783C9002AEA27 /* HongmeiVC.swift */,
 			);
 			path = JPhoneLoginVCs;
+			sourceTree = "<group>";
+		};
+		0898701D26662AF500A54A7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0898701E26662B0F00A54A7C /* RXVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0898702626662B5E00A54A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0898702726662B7000A54A7C /* RXModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7E0C918A79A6E5D211138101 /* Pods */ = {
@@ -461,7 +507,9 @@
 				085337DC259AC1EE00475EF5 /* Home.storyboard in Resources */,
 				085450DA2591C30F00E22902 /* Assets.xcassets in Resources */,
 				084AD00E2592EAC000CB221E /* EggsView.xib in Resources */,
+				086C6F44265F462800E4E71C /* RxSwift.storyboard in Resources */,
 				085450D52591C30C00E22902 /* Main.storyboard in Resources */,
+				08B3979925E77979002AEA27 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				084AD3D625933E6000CB221E /* MNFMineVC.swift in Sources */,
+				086C6F49265F465300E4E71C /* MNFObservableVC.swift in Sources */,
 				085337D4259AC19200475EF5 /* MNFHomeVC.swift in Sources */,
 				086A500E25B6782500C6D29E /* JPPhoneLogin.swift in Sources */,
 				085451FE2591DA9C00E22902 /* MNFMovieDetailVC.swift in Sources */,
@@ -561,11 +610,18 @@
 				084121E4259B194400F09646 /* R.generated.swift in Sources */,
 				085450D82591C30C00E22902 /* TBMtimeProject.xcdatamodeld in Sources */,
 				085450D22591C30C00E22902 /* ViewController.swift in Sources */,
+				08B397FE25E783C9002AEA27 /* HongmeiVC.swift in Sources */,
+				0898702826662B7000A54A7C /* RXModel.swift in Sources */,
 				0847EECC25A2EFB200EBD70E /* MNFTableViewVC.swift in Sources */,
-				084AD3CB25933D6500CB221E /* MNFRxSwiftVC.swift in Sources */,
+				086C6F3C265F438700E4E71C /* MNFCustomRxSwiftVC.swift in Sources */,
+				0871A81B25B952E6009B6C87 /* JGOphoneViewModel.swift in Sources */,
 				085450CE2591C30C00E22902 /* AppDelegate.swift in Sources */,
+				08B3974925E7787B002AEA27 /* CustomView.swift in Sources */,
 				085451FC2591DA9B00E22902 /* CommonHeader.swift in Sources */,
+				08B397F425E77D42002AEA27 /* UIWindowExt.swift in Sources */,
 				0847EE6C25A2A47400EBD70E /* MNFDisbagVC.swift in Sources */,
+				0898701F26662B0F00A54A7C /* RXVM.swift in Sources */,
+				08B397F925E77DED002AEA27 /* NSObjectExt.swift in Sources */,
 				0847EE7125A2B35700EBD70E /* MNFComBineLatestAndZIPVC.swift in Sources */,
 				085452002591DA9C00E22902 /* MNFActorDetailVC.swift in Sources */,
 			);
@@ -756,6 +812,81 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++.1\"",
+					"-l\"jcore-ios-2.4.0\"",
+					"-l\"jverification-ios-2.6.3\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Differentiator\"",
+					"-framework",
+					"\"EAccountApiSDK\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OAuth\"",
+					"-framework",
+					"\"Rswift\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxDataSources\"",
+					"-framework",
+					"\"RxGesture\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TBMtimeBaseControll\"",
+					"-framework",
+					"\"TBMtimeCommon\"",
+					"-framework",
+					"\"TYRZSDK\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"account_login_sdk_noui_core\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 99_Dev_Net;
@@ -783,6 +914,81 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++.1\"",
+					"-l\"jcore-ios-2.4.0\"",
+					"-l\"jverification-ios-2.6.3\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Differentiator\"",
+					"-framework",
+					"\"EAccountApiSDK\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OAuth\"",
+					"-framework",
+					"\"Rswift\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxDataSources\"",
+					"-framework",
+					"\"RxGesture\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TBMtimeBaseControll\"",
+					"-framework",
+					"\"TBMtimeCommon\"",
+					"-framework",
+					"\"TYRZSDK\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"account_login_sdk_noui_core\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtime.mTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = 99_Dev_Net;

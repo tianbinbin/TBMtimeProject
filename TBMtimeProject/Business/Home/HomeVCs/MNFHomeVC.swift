@@ -21,7 +21,7 @@ extension MNFHomeVC {
         case 0:
             switch indexPath.row {
             case 0:
-                let vcRxSwift = R.storyboard.home.mnfRxSwiftVC()
+                let vcRxSwift = R.storyboard.home.mnfCustomRxSwiftVC()
                 navigationController?.pushViewController(vcRxSwift!, animated: true)
             case 1:
                 let vc = MNFDisbagVC()

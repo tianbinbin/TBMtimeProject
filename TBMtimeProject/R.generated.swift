@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
     /// Storyboard `Home`.
     static let home = _R.storyboard.home()
@@ -97,6 +97,8 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `RxSwift`.
+    static let rxSwift = _R.storyboard.rxSwift()
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "Home", bundle: ...)`
@@ -116,6 +118,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "RxSwift", bundle: ...)`
+    static func rxSwift(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.rxSwift)
     }
     #endif
 
@@ -281,10 +290,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
+    /// Nib `CustomView`.
+    static let customView = _R.nib._CustomView()
     /// Nib `EggsView`.
     static let eggsView = _R.nib._EggsView()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CustomView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.customView) instead")
+    static func customView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.customView)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "EggsView", in: bundle)`
@@ -293,6 +312,10 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.eggsView)
     }
     #endif
+
+    static func customView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BPFBaseCustomNavgationView? {
+      return R.nib.customView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BPFBaseCustomNavgationView
+    }
 
     static func eggsView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> EggsView? {
       return R.nib.eggsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EggsView
@@ -340,6 +363,17 @@ struct _R: Rswift.Validatable {
       try _EggsView.validate()
     }
 
+    struct _CustomView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CustomView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> BPFBaseCustomNavgationView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? BPFBaseCustomNavgationView
+      }
+
+      fileprivate init() {}
+    }
+
     struct _EggsView: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "EggsView"
@@ -376,14 +410,17 @@ struct _R: Rswift.Validatable {
       #if os(iOS) || os(tvOS)
       try main.validate()
       #endif
+      #if os(iOS) || os(tvOS)
+      try rxSwift.validate()
+      #endif
     }
 
     #if os(iOS) || os(tvOS)
     struct home: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let mnfCellVC = StoryboardViewControllerResource<MNFCellVC>(identifier: "MNFCellVC")
+      let mnfCustomRxSwiftVC = StoryboardViewControllerResource<MNFCustomRxSwiftVC>(identifier: "MNFCustomRxSwiftVC")
       let mnfHomeVC = StoryboardViewControllerResource<MNFHomeVC>(identifier: "MNFHomeVC")
-      let mnfRxSwiftVC = StoryboardViewControllerResource<MNFRxSwiftVC>(identifier: "MNFRxSwiftVC")
       let mnfSwiftUIVC = StoryboardViewControllerResource<MNFSwiftUIVC>(identifier: "MNFSwiftUIVC")
       let mnfTableViewVC = StoryboardViewControllerResource<MNFTableViewVC>(identifier: "MNFTableViewVC")
       let mnfjPhoneLoginVC = StoryboardViewControllerResource<MNFJPhoneLoginVC>(identifier: "MNFJPhoneLoginVC")
@@ -393,12 +430,12 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfCellVC)
       }
 
-      func mnfHomeVC(_: Void = ()) -> MNFHomeVC? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfHomeVC)
+      func mnfCustomRxSwiftVC(_: Void = ()) -> MNFCustomRxSwiftVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfCustomRxSwiftVC)
       }
 
-      func mnfRxSwiftVC(_: Void = ()) -> MNFRxSwiftVC? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfRxSwiftVC)
+      func mnfHomeVC(_: Void = ()) -> MNFHomeVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfHomeVC)
       }
 
       func mnfSwiftUIVC(_: Void = ()) -> MNFSwiftUIVC? {
@@ -417,9 +454,9 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.home().mnfCellVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfCellVC' could not be loaded from storyboard 'Home' as 'MNFCellVC'.") }
+        if _R.storyboard.home().mnfCustomRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfCustomRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFCustomRxSwiftVC'.") }
         if _R.storyboard.home().mnfHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfHomeVC' could not be loaded from storyboard 'Home' as 'MNFHomeVC'.") }
         if _R.storyboard.home().mnfjPhoneLoginVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfjPhoneLoginVC' could not be loaded from storyboard 'Home' as 'MNFJPhoneLoginVC'.") }
-        if _R.storyboard.home().mnfRxSwiftVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfRxSwiftVC' could not be loaded from storyboard 'Home' as 'MNFRxSwiftVC'.") }
         if _R.storyboard.home().mnfSwiftUIVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfSwiftUIVC' could not be loaded from storyboard 'Home' as 'MNFSwiftUIVC'.") }
         if _R.storyboard.home().mnfTableViewVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfTableViewVC' could not be loaded from storyboard 'Home' as 'MNFTableViewVC'.") }
       }
@@ -454,6 +491,26 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct rxSwift: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let mnfObservableVC = StoryboardViewControllerResource<MNFObservableVC>(identifier: "MNFObservableVC")
+      let name = "RxSwift"
+
+      func mnfObservableVC(_: Void = ()) -> MNFObservableVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mnfObservableVC)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.rxSwift().mnfObservableVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mnfObservableVC' could not be loaded from storyboard 'RxSwift' as 'MNFObservableVC'.") }
       }
 
       fileprivate init() {}

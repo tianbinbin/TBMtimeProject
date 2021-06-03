@@ -34,15 +34,18 @@ import AdSupport
     }
     
     /// 获取一键登录的信息
-    @objc class func getAuthorization(_ vc:UIViewController) {
+    @objc class func getAuthorization(_ vc:UIViewController,_ callBack:@escaping (_ intCode: Int) -> ()) {
         JVERIFICATIONService.getAuthorizationWith(vc, hide: true, animated: true, timeout: 15*1000, completion: { (result) in
             if let result = result {
                 if let token = result["loginToken"] {
                     if let code = result["code"], let op = result["operator"] {
                         print("一键登录 result: code = \(code), operator = \(op), loginToken = \(token)")
+                        
+                            
                         }
                 }else if let code = result["code"], let content = result["content"] {
                     print("一键登录 result: code = \(code), content = \(content)")
+                    callBack(1)
                 }
             }
         }) { (type, content) in
@@ -53,7 +56,7 @@ import AdSupport
     }
     
     /// 获取token
-    @objc func getToken() {
+    @objc class func getToken() {
         JVERIFICATIONService.getToken { (result) in
             if let result = result {
                 if let token = result["token"] {
@@ -91,6 +94,13 @@ import AdSupport
             }
         }
     }
+    
+    @objc func btnaction() {
+        print("是飒飒飒飒wwwwww")
+        JVERIFICATIONService.dismissLoginController(animated: true) {
+            print("是飒飒飒飒")
+        }
+    }
 }
 
 
@@ -101,13 +111,17 @@ extension JPPhoneLogin {
         
         let config = JVUIConfig()
         /// 设置导航栏导航栏   自定义导航栏显示的文案 字体 颜色等
-        config.navCustom = false
+        config.navCustom = true
         config.navText = NSAttributedString.init(string: "登录统一认证",
                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white,
                                                               NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18)])
         /// 导航栏的返回按钮
         config.navReturnHidden = false
+        config.navTransparent = true
         config.navReturnImg = R.image.close()
+        
+        /// 背景颜色
+//        config.authPageBackgroundImage = R.image.icon_eggsShow()
         
         /// 自动旋转页面 关闭
         config.shouldAutorotate = false
@@ -232,7 +246,7 @@ extension JPPhoneLogin {
         if let norImage = login_nor_image, let disImage = login_dis_image, let higImage = login_hig_image {
             config.logBtnImgs = [norImage, disImage, higImage]
         }
-        
+                
         let loginBtnWidth = login_nor_image?.size.width ?? 100
         let loginBtnHeight = login_nor_image?.size.height ?? 100
         
@@ -393,14 +407,12 @@ extension JPPhoneLogin {
         
         JVERIFICATIONService.customUI(with: config) { (customView) in
             /// 还可以加一点自定义的UI 到界面上 但是上面的那些是一个都不能少 所以不建议再自定义UI
-//            guard let customV = customView else {
-//                return
-//            }
-//            let label = UILabel()
-//            label.text = "customLabel"
-//            label.backgroundColor = .purple
-//            label.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
-//            customV.addSubview(label)
+            guard let customV = customView else {
+                return
+            }
+            let customView = R.nib.customView(owner: self)!
+            customView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            customV.addSubview(customView)
         }
         
        }

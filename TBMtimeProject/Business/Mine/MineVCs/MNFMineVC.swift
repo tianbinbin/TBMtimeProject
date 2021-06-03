@@ -22,9 +22,7 @@ extension MNFMineVC {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let vcRX = MNFRxSwiftVC()
-        navigationController?.pushViewController(vcRX, animated: true)
-        
+
     }
    
 }

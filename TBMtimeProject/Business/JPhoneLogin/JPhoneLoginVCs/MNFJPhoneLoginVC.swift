@@ -17,16 +17,17 @@ class MNFJPhoneLoginVC: MNFBaseViewController {
         view.backgroundColor = .white
         
         JPPhoneLogin.congfigPhoneLoginFullScreenUI()
+        JPPhoneLogin.getAuthorization(self) { [weak self] (intCode) in
+            self?.navigationController?.popViewController(animated: true)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        JPPhoneLogin.getAuthorization(self)
     }
     
     @IBAction func btnAction(_ sender: Any) {
-            
+        JPPhoneLogin.getToken()
     }
 }
 
